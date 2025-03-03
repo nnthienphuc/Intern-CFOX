@@ -1,0 +1,6 @@
+@CFOXApi_HostAddress = http://localhost:5180
+
+GET {{CFOXApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

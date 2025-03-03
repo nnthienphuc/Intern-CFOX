@@ -1,0 +1,28 @@
+Dựng web API .net 8.0 trở lên (giao diện web làm cơ bản cũng được):
+ - API Đăng nhập, Đăng ký , Đổi mật khẩu, Quên mật khẩu (tích hợp mail)
+ + Gửi mail active or restore pwd
+ ? có cần mã hóa pwd để lưu database không? -> hash pwd
+ 
+ - Quản lý giỏ hàng (thêm, xóa, sửa, lấy danh sách)
+ ? Ở phần giỏ hàng, mình đang bán tại cửa hàng (tức là khách hàng đem sản phẩm tới cho nhân viên thanh toán) vậy thì tại sao cần lưu giỏ hàng ở DB trong khi mình có thể tạo 1 table ảo để làm việc này ạ? -> lưu ở session thôi không cần DB
+ 
+ -  Quản lý cho sản phẩm, danh mục sản phẩm.
+ + crud
+ 
+ -  Quản lý đơn hàng (tạo đơn hàng, thanh toán, chi tiết, cập nhật status)
+ ? Thanh toán đơn hàng là sao? vì đang ở admin thì mình cho button xác nhận thanh toán hay sao? -> Tức là e làm trang bán hàng cho nhân viên, khi khách hàng tới mua thì nv tạo đơn hàng, chọn sp mà khách mua rồi thanh toán là nhập số tiền khách đưa vào => số dư cần trả lại => Done đơn hàng
+ 
+ -  Quản lý voucher, apply voucher cho đơn hàng, quản lý chiến dịch voucher (thời gian hết hạn, số lượng sử dụng, đối tượng áp dụng).
+ + Ở đây thời gian hết hạn có thể đặt là ngày hết hạn, số lượng thì cứ mỗi lần áp voucher và thanh toán thành công thì sẽ -1 đến khi hết voucher -> Ở đây sẽ có 3 điều kiện có thể sử dụng voucher, phải đáp ứng đủ.
+ 
+ -  Sử dụng database bất kỳ (Ưu tiên SQL Server).
+ ? Database tự thiết kế hay sao? Có bắt buộc phải tối ưu database về chuẩn 3 hay gì không? hay chỉ thiết kế để chạy được project thôi? -> Tự thiết kế
+
+- Yêu cầu bổ sung:
+     + Authentication/Authorization: Kiểm tra token xác thực và hết hạn khi gọi API sản phẩm/danh mục.
+     + Validation: Validate dữ liệu đầu vào 
+     + Refresh Token: Hỗ trợ refresh token để không phải đăng nhập lại.
+     + Điều kiện áp dụng Voucher: Giá trị đơn hàng tối thiểu, sản phẩm/danh mục áp dụng.
+     + Tích hợp RabbitMQ:Xử lý tác vụ bất đồng bộ: Gửi email, xử lý đơn hàng.
+     + Caching thông tin sản phẩm
+     + Bắt lỗi và logging
