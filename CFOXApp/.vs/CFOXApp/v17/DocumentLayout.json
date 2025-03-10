@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\Github\\Intern-CFOX\\CFOXApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|d:\\github\\intern-cfox\\cfoxapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|d:\\github\\intern-cfox\\cfoxapp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|d:\\github\\intern-cfox\\cfoxapp\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|d:\\github\\intern-cfox\\cfoxapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|d:\\github\\intern-cfox\\cfoxapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|d:\\github\\intern-cfox\\cfoxapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|d:\\github\\intern-cfox\\cfoxapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|solutionrelative:pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|d:\\github\\intern-cfox\\cfoxapp\\pages\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|solutionrelative:pages\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|d:\\github\\intern-cfox\\cfoxapp\\properties\\servicedependencies.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{75EB6E40-206C-4919-8F50-D5F23EC17A0B}|CFOXApp.csproj|solutionrelative:properties\\servicedependencies.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,53 +51,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\CFOXApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Github\\Intern-CFOX\\CFOXApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\CFOXApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Github\\Intern-CFOX\\CFOXApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T07:52:10.647Z",
+              "WhenOpened": "2025-03-10T10:02:06.226Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\CFOXApp\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "D:\\Github\\Intern-CFOX\\CFOXApp\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T07:51:37.988Z",
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\CFOXApp\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "D:\\Github\\Intern-CFOX\\CFOXApp\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T09:58:13.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\CFOXApp\\Pages\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
-              "ToolTip": "D:\\Github\\Intern-CFOX\\CFOXApp\\Pages\\Privacy.cshtml",
-              "RelativeToolTip": "Pages\\Privacy.cshtml",
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\CFOXApp\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "D:\\Github\\Intern-CFOX\\CFOXApp\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T07:51:14.88Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T09:58:08.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Privacy.cshtml.cs",
-              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\CFOXApp\\Pages\\Privacy.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml.cs",
-              "ToolTip": "D:\\Github\\Intern-CFOX\\CFOXApp\\Pages\\Privacy.cshtml.cs",
-              "RelativeToolTip": "Pages\\Privacy.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\CFOXApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Github\\Intern-CFOX\\CFOXApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T07:46:44.507Z",
+              "WhenOpened": "2025-03-10T09:23:14.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\CFOXApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Github\\Intern-CFOX\\CFOXApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T09:23:06.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "serviceDependencies.local.json",
+              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\CFOXApp\\Properties\\serviceDependencies.local.json",
+              "RelativeDocumentMoniker": "Properties\\serviceDependencies.local.json",
+              "ToolTip": "D:\\Github\\Intern-CFOX\\CFOXApp\\Properties\\serviceDependencies.local.json",
+              "RelativeToolTip": "Properties\\serviceDependencies.local.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T09:22:05.996Z",
               "EditorCaption": ""
             }
           ]

@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("10b82b47-c4aa-48a9-8840-2f3bd32c107c")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CFOXApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8713fe78ba36ab0fc914180cc8d19c1a2e5439e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f22f98bc72cc34f9fc0101c16c5a906b26ae8673")]
 [assembly: System.Reflection.AssemblyProductAttribute("CFOXApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CFOXApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
