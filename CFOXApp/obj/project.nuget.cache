@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "X9G2kUk6U9I=",
+  "success": true,
+  "projectFilePath": "D:\\Github\\Intern-CFOX\\CFOXApp\\CFOXApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nnthienphuc\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.200\\microsoft.net.sdk.compilers.toolset.9.0.200.nupkg.sha512"
+  ],
+  "logs": []
+}
