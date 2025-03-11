@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CFOXApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2543f1c9dfcd822c9aa9cba20b177a66bdfb22b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+329712f4cfed372a6e234b34266c2f27f939e4aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("CFOXApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CFOXApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
