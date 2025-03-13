@@ -1,19 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace BookStoreWebApp.Models;
 
+[Table("Staff")]
 public partial class Staff
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int StaffId { get; set; }
 
-    public string Email { get; set; } = null!;
+    [Required, EmailAddress]
+    public required string Email { get; set; }
 
-    public string Fullname { get; set; } = null!;
+    [Required]
+    public required string Fullname { get; set; }
 
-    public string Phone { get; set; } = null!;
+    [Required, MaxLength(10)]
+    public required string Phone { get; set; }
 
-    public string HashPwd { get; set; } = null!;
+    [Required]
+    public required string HashPwd { get; set; }
 
     public bool Gender { get; set; }
 
