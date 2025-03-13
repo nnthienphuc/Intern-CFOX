@@ -176,3 +176,8 @@ D:\Github\Intern-CFOX\BookStoreWebApp\obj\Debug\net8.0\refint\BookStoreWebApp.dl
 D:\Github\Intern-CFOX\BookStoreWebApp\obj\Debug\net8.0\BookStoreWebApp.pdb
 D:\Github\Intern-CFOX\BookStoreWebApp\obj\Debug\net8.0\BookStoreWebApp.genruntimeconfig.cache
 D:\Github\Intern-CFOX\BookStoreWebApp\obj\Debug\net8.0\ref\BookStoreWebApp.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\MailKit.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\MimeKit.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
