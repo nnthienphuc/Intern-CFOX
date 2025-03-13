@@ -11,6 +11,7 @@ using System.Security.Claims;
 using System.Text;
 using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookStoreWebApp.Controllers
 {
@@ -28,6 +29,45 @@ namespace BookStoreWebApp.Controllers
             _emailService = emailService;
             _config = config;
         }
+
+        // 🔹 API Đổi mật khẩu
+        [HttpPost("change-password")]
+        [Authorize] // Yêu cầu user đã đăng nhập
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordRequest request)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            // Kiểm tra NewPwd và ConfirmNewPwd có khớp không
+            if (request.NewPwd != request.ConfirmNewPwd)
+            {
+                return BadRequest(new { message = "Mật khẩu mới và xác nhận mật khẩu không khớp!" });
+            }
+
+            // Lấy ID user từ JWT Token
+            var userIdClaim = User.FindFirst("id")?.Value;
+            if (userIdClaim == null)
+                return Unauthorized(new { message = "Không thể xác định người dùng." });
+
+            int userId = int.Parse(userIdClaim);
+            var user = await _context.Staff.FindAsync(userId);
+
+            if (user == null)
+                return Unauthorized(new { message = "Người dùng không tồn tại!" });
+
+            // Kiểm tra mật khẩu cũ
+            if (!BCrypt.Net.BCrypt.Verify(request.OldPwd, user.HashPwd))
+            {
+                return BadRequest(new { message = "Mật khẩu cũ không đúng!" });
+            }
+
+            // Hash mật khẩu mới
+            user.HashPwd = BCrypt.Net.BCrypt.HashPassword(request.NewPwd);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Đổi mật khẩu thành công!" });
+        }
+
 
         // 🔹 API Đăng ký tài khoản
         [HttpPost("register")]
