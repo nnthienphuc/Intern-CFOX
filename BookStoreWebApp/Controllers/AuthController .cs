@@ -1,27 +1,35 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using BookStoreWebApp.Data;
 using BookStoreWebApp.Models;
 using BookStoreWebApp.DTOs;
 using BookStoreWebApp.Services;
 using BCrypt.Net;
-using System;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
+using System;
 using System.Threading.Tasks;
 
 namespace BookStoreWebApp.Controllers
 {
-    public class AuthController : Controller
+    [Route("api/auth")]
+    [ApiController]
+    public class AuthController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
         private readonly EmailService _emailService;
+        private readonly IConfiguration _config;
 
-        public AuthController(ApplicationDbContext context, EmailService emailService)
+        public AuthController(ApplicationDbContext context, EmailService emailService, IConfiguration config)
         {
             _context = context;
             _emailService = emailService;
+            _config = config;
         }
 
+        // 🔹 API Đăng ký tài khoản
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
@@ -50,7 +58,7 @@ namespace BookStoreWebApp.Controllers
 
             // 🛠️ Tạo token xác nhận email
             var token = Convert.ToBase64String(Encoding.UTF8.GetBytes(request.Email));
-            var confirmUrl = $"http://localhost:5157/confirm-email?token={token}";
+            var confirmUrl = $"http://localhost:5157/api/auth/confirm-email?token={token}";
 
             // 📨 Gửi email xác nhận
             string emailBody = $"<h2>Chào {request.Fullname},</h2>" +
@@ -62,6 +70,7 @@ namespace BookStoreWebApp.Controllers
             return Ok(new { message = "Đăng ký thành công! Vui lòng kiểm tra email để kích hoạt tài khoản." });
         }
 
+        // 🔹 API Xác nhận email
         [HttpGet("confirm-email")]
         public async Task<IActionResult> ConfirmEmail(string token)
         {
@@ -75,6 +84,57 @@ namespace BookStoreWebApp.Controllers
             await _context.SaveChangesAsync();
 
             return Ok(new { message = "Kích hoạt tài khoản thành công! Bạn có thể đăng nhập ngay bây giờ." });
+        }
+
+        // 🔹 API Đăng nhập
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var user = await _context.Staff.FirstOrDefaultAsync(s => s.Email == request.Email);
+
+            if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.HashPwd))
+            {
+                return Unauthorized(new { message = "Sai email hoặc mật khẩu!" });
+            }
+
+            if (!user.IsActive)
+            {
+                return Unauthorized(new { message = "Tài khoản chưa kích hoạt! Vui lòng kiểm tra email." });
+            }
+
+            var token = GenerateJwtToken(user);
+            return Ok(new { token });
+        }
+
+        private string GenerateJwtToken(Staff user)
+        {
+            var jwtKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY") ?? _config["Jwt:Key"];
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim("id", user.StaffId.ToString()),
+                new Claim("email", user.Email),
+                new Claim("isActive", user.IsActive.ToString())
+            };
+
+            var token = new JwtSecurityToken(
+                issuer: _config["Jwt:Issuer"],
+                audience: _config["Jwt:Audience"],
+                claims: claims,
+                expires: DateTime.UtcNow.AddMinutes(60),
+                signingCredentials: credentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }
