@@ -30,6 +30,37 @@ namespace BookStoreWebApp.Controllers
             _config = config;
         }
 
+        // 🔹 API Quên mật khẩu
+        [HttpPost("forgot-password")]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequest request)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var user = await _context.Staff.FirstOrDefaultAsync(s => s.Email == request.Email);
+            if (user == null)
+                return BadRequest(new { message = "Email không tồn tại!" });
+
+            if (!user.IsActive)
+                return BadRequest(new { message = "Tài khoản chưa kích hoạt!" });
+
+            // 🛠️ Đặt mật khẩu tạm là "123456"
+            string tempPassword = "123456";
+            user.HashPwd = BCrypt.Net.BCrypt.HashPassword(tempPassword);
+            await _context.SaveChangesAsync();
+
+            // 📨 Gửi email hướng dẫn reset mật khẩu
+            string emailBody = $"<h2>Chào {user.Fullname},</h2>" +
+                               "<p>Bạn đã yêu cầu đặt lại mật khẩu.</p>" +
+                               "<p>Mật khẩu tạm thời của bạn là: <strong>123456</strong></p>" +
+                               "<p>Vui lòng đăng nhập bằng mật khẩu này và đổi mật khẩu mới ngay.</p>";
+
+            await _emailService.SendEmailAsync(user.Email, "Reset mật khẩu", emailBody);
+
+            return Ok(new { message = "Mật khẩu tạm thời đã được gửi vào email. Vui lòng kiểm tra email của bạn!" });
+        }
+
+
         // 🔹 API Đổi mật khẩu
         [HttpPost("change-password")]
         [Authorize] // Yêu cầu user đã đăng nhập
