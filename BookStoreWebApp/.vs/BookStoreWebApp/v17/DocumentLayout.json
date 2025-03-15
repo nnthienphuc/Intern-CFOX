@@ -42,8 +42,7 @@
               "RelativeToolTip": "DTOs\\ForgotPasswordRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T10:31:21.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T10:31:21.941Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "Controllers\\AuthController .cs",
               "ToolTip": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\AuthController .cs",
               "RelativeToolTip": "Controllers\\AuthController .cs",
-              "ViewState": "AgIAABEAAAAAAAAAAADwvx8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAcwEsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T09:39:30.62Z",
               "EditorCaption": ""

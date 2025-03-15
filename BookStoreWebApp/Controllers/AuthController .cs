@@ -44,20 +44,35 @@ namespace BookStoreWebApp.Controllers
             if (!user.IsActive)
                 return BadRequest(new { message = "Tài khoản chưa kích hoạt!" });
 
-            // 🛠️ Đặt mật khẩu tạm là "123456"
-            string tempPassword = "123456";
-            user.HashPwd = BCrypt.Net.BCrypt.HashPassword(tempPassword);
+            // 🛠️ Tạo token xác nhận reset mật khẩu
+            var token = Convert.ToBase64String(Encoding.UTF8.GetBytes(request.Email));
+            var confirmUrl = $"http://localhost:5157/api/auth/confirm-reset?token={token}";
+
+            // 📨 Gửi email xác nhận
+            string emailBody = $"<h2>Chào {user.Fullname},</h2>" +
+                               "<p>Vui lòng nhấp vào link sau để xác nhận yêu cầu đổi mật khẩu:</p>" +
+                               $"<a href='{confirmUrl}'>Xác nhận đổi mật khẩu</a>";
+
+            await _emailService.SendEmailAsync(user.Email, "Xác nhận đổi mật khẩu", emailBody);
+
+            return Ok(new { message = "Một email xác nhận đã được gửi. Vui lòng kiểm tra hộp thư!" });
+        }
+
+        [HttpGet("confirm-reset")]
+        public async Task<IActionResult> ConfirmResetPassword(string token)
+        {
+            var email = Encoding.UTF8.GetString(Convert.FromBase64String(token));
+            var user = await _context.Staff.FirstOrDefaultAsync(s => s.Email == email);
+
+            if (user == null)
+                return BadRequest(new { message = "Token không hợp lệ!" });
+
+            // 🛠️ Đặt lại mật khẩu mặc định
+            string newPassword = "123456";
+            user.HashPwd = BCrypt.Net.BCrypt.HashPassword(newPassword);
             await _context.SaveChangesAsync();
 
-            // 📨 Gửi email hướng dẫn reset mật khẩu
-            string emailBody = $"<h2>Chào {user.Fullname},</h2>" +
-                               "<p>Bạn đã yêu cầu đặt lại mật khẩu.</p>" +
-                               "<p>Mật khẩu tạm thời của bạn là: <strong>123456</strong></p>" +
-                               "<p>Vui lòng đăng nhập bằng mật khẩu này và đổi mật khẩu mới ngay.</p>";
-
-            await _emailService.SendEmailAsync(user.Email, "Reset mật khẩu", emailBody);
-
-            return Ok(new { message = "Mật khẩu tạm thời đã được gửi vào email. Vui lòng kiểm tra email của bạn!" });
+            return Ok(new { message = "Mật khẩu đã được đặt lại thành 123456. Hãy đăng nhập và đổi mật khẩu ngay!" });
         }
 
 
