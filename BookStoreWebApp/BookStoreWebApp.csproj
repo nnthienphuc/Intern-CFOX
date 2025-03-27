@@ -7,6 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Configurations\**" />
+    <Compile Remove="Middlewares\**" />
+    <Compile Remove="Repositories\**" />
+    <Compile Remove="Tests\**" />
+    <Compile Remove="Utils\**" />
+    <Content Remove="Configurations\**" />
+    <Content Remove="Middlewares\**" />
+    <Content Remove="Repositories\**" />
+    <Content Remove="Tests\**" />
+    <Content Remove="Utils\**" />
+    <EmbeddedResource Remove="Configurations\**" />
+    <EmbeddedResource Remove="Middlewares\**" />
+    <EmbeddedResource Remove="Repositories\**" />
+    <EmbeddedResource Remove="Tests\**" />
+    <EmbeddedResource Remove="Utils\**" />
+    <None Remove="Configurations\**" />
+    <None Remove="Middlewares\**" />
+    <None Remove="Repositories\**" />
+    <None Remove="Tests\**" />
+    <None Remove="Utils\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="MailKit" Version="4.11.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
@@ -23,12 +46,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configurations\" />
-    <Folder Include="Middlewares\" />
     <Folder Include="Data\" />
-    <Folder Include="Tests\" />
-    <Folder Include="Utils\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>
