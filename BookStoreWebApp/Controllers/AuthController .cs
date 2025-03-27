@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using BookStoreWebApp.Data;
 using BookStoreWebApp.Models;
-using BookStoreWebApp.DTOs;
 using BookStoreWebApp.Services;
 using BCrypt.Net;
 using System.IdentityModel.Tokens.Jwt;
@@ -12,6 +11,7 @@ using System.Text;
 using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using BookStoreWebApp.DTOs;
 
 namespace BookStoreWebApp.Controllers
 {

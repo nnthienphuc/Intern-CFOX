@@ -9,7 +9,10 @@ D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\BookStoreWebApp.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\BookStoreWebApp.pdb
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Azure.Core.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Azure.Identity.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Humanizer.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\MailKit.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Microsoft.Build.Locator.dll
@@ -46,6 +49,7 @@ D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.T
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\MimeKit.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Mono.TextTemplating.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -65,6 +69,7 @@ D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\System.IdentityModel.Toke
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\System.IO.Pipelines.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\System.Memory.Data.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\System.Security.Permissions.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\System.Text.Encodings.Web.dll
@@ -145,6 +150,7 @@ D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\M
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
@@ -176,10 +182,3 @@ D:\Github\Intern-CFOX\BookStoreWebApp\obj\Debug\net8.0\refint\BookStoreWebApp.dl
 D:\Github\Intern-CFOX\BookStoreWebApp\obj\Debug\net8.0\BookStoreWebApp.pdb
 D:\Github\Intern-CFOX\BookStoreWebApp\obj\Debug\net8.0\BookStoreWebApp.genruntimeconfig.cache
 D:\Github\Intern-CFOX\BookStoreWebApp\obj\Debug\net8.0\ref\BookStoreWebApp.dll
-D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
-D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\MailKit.dll
-D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\MimeKit.dll
-D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\Github\Intern-CFOX\BookStoreWebApp\bin\Debug\net8.0\BCrypt.Net-Next.dll
-D:\Github\Intern-CFOX\BookStoreWebApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
