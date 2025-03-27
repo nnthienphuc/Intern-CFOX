@@ -30,7 +30,7 @@ namespace BookStoreWebApp.Controllers
             _config = config;
         }
 
-        // 🔹 API Quên mật khẩu
+        // API Quên mật khẩu
         [HttpPost("forgot-password")]
         public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequest request)
         {
@@ -44,11 +44,11 @@ namespace BookStoreWebApp.Controllers
             if (!user.IsActive)
                 return BadRequest(new { message = "Tài khoản chưa kích hoạt!" });
 
-            // 🛠️ Tạo token xác nhận reset mật khẩu
+            // Tạo token xác nhận reset mật khẩu
             var token = Convert.ToBase64String(Encoding.UTF8.GetBytes(request.Email));
             var confirmUrl = $"http://localhost:5157/api/auth/confirm-reset?token={token}";
 
-            // 📨 Gửi email xác nhận
+            // Gửi email xác nhận
             string emailBody = $"<h2>Chào {user.Fullname},</h2>" +
                                "<p>Vui lòng nhấp vào link sau để xác nhận yêu cầu đổi mật khẩu:</p>" +
                                $"<a href='{confirmUrl}'>Xác nhận đổi mật khẩu</a>";
@@ -67,7 +67,7 @@ namespace BookStoreWebApp.Controllers
             if (user == null)
                 return BadRequest(new { message = "Token không hợp lệ!" });
 
-            // 🛠️ Đặt lại mật khẩu mặc định
+            // Đặt lại mật khẩu mặc định
             string newPassword = "123456";
             user.HashPwd = BCrypt.Net.BCrypt.HashPassword(newPassword);
             await _context.SaveChangesAsync();
@@ -76,7 +76,7 @@ namespace BookStoreWebApp.Controllers
         }
 
 
-        // 🔹 API Đổi mật khẩu
+        // API Đổi mật khẩu
         [HttpPost("change-password")]
         [Authorize] // Yêu cầu user đã đăng nhập
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordRequest request)
@@ -115,7 +115,7 @@ namespace BookStoreWebApp.Controllers
         }
 
 
-        // 🔹 API Đăng ký tài khoản
+        // API Đăng ký tài khoản
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
@@ -142,11 +142,11 @@ namespace BookStoreWebApp.Controllers
             _context.Staff.Add(newStaff);
             await _context.SaveChangesAsync();
 
-            // 🛠️ Tạo token xác nhận email
+            // Tạo token xác nhận email
             var token = Convert.ToBase64String(Encoding.UTF8.GetBytes(request.Email));
             var confirmUrl = $"http://localhost:5157/api/auth/confirm-email?token={token}";
 
-            // 📨 Gửi email xác nhận
+            // Gửi email xác nhận
             string emailBody = $"<h2>Chào {request.Fullname},</h2>" +
                                "<p>Vui lòng nhấp vào link sau để kích hoạt tài khoản:</p>" +
                                $"<a href='{confirmUrl}'>Kích hoạt tài khoản</a>";
@@ -156,7 +156,7 @@ namespace BookStoreWebApp.Controllers
             return Ok(new { message = "Đăng ký thành công! Vui lòng kiểm tra email để kích hoạt tài khoản." });
         }
 
-        // 🔹 API Xác nhận email
+        // API Xác nhận email
         [HttpGet("confirm-email")]
         public async Task<IActionResult> ConfirmEmail(string token)
         {
@@ -172,7 +172,7 @@ namespace BookStoreWebApp.Controllers
             return Ok(new { message = "Kích hoạt tài khoản thành công! Bạn có thể đăng nhập ngay bây giờ." });
         }
 
-        // 🔹 API Đăng nhập
+        // API Đăng nhập
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {

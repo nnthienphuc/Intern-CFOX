@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
     EnvironmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"
 });
 
-// 🔹 Bảo đảm ASP.NET Core đọc được biến môi trường
+// Bảo đảm ASP.NET Core đọc được biến môi trường
 builder.Configuration.AddEnvironmentVariables();
 
 // Lấy biến môi trường
@@ -25,10 +25,10 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// 🔹 Đăng ký EmailService vào Dependency Injection
+// Đăng ký EmailService vào Dependency Injection
 builder.Services.AddScoped<BookStoreWebApp.Services.EmailService>();
 
-// 🔹 Cấu hình Authentication với JWT
+// Cấu hình Authentication với JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -60,7 +60,7 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 app.UseRouting();
 
-// 🔹 Sử dụng Authentication & Authorization
+// Sử dụng Authentication & Authorization
 app.UseAuthentication();
 app.UseAuthorization();
 
