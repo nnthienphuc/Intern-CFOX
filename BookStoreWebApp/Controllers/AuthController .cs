@@ -30,7 +30,6 @@ namespace BookStoreWebApp.Controllers
             _config = config;
         }
 
-        // API Quên mật khẩu
         [HttpPost("forgot-password")]
         public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequest request)
         {
@@ -76,7 +75,6 @@ namespace BookStoreWebApp.Controllers
         }
 
 
-        // API Đổi mật khẩu
         [HttpPost("change-password")]
         [Authorize] // Yêu cầu user đã đăng nhập
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordRequest request)
@@ -115,7 +113,6 @@ namespace BookStoreWebApp.Controllers
         }
 
 
-        // API Đăng ký tài khoản
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
@@ -172,7 +169,6 @@ namespace BookStoreWebApp.Controllers
             return Ok(new { message = "Kích hoạt tài khoản thành công! Bạn có thể đăng nhập ngay bây giờ." });
         }
 
-        // API Đăng nhập
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
