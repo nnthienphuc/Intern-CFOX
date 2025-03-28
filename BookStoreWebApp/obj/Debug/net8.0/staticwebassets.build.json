@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Fs6eFsURKQyaL7qraKUm7uqnBM9ODzWO2GMVfGe2sc4=",
+  "Hash": "e9FmvRiavdcD74x6BGY5ja0etl+4ECm1UD8CVMRv9FU=",
   "Source": "BookStoreWebApp",
   "BasePath": "_content/BookStoreWebApp",
   "Mode": "Default",
@@ -1343,7 +1343,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 04:40:40 GMT"
+          "Value": "Fri, 28 Mar 2025 16:33:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1380,7 +1380,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 04:40:40 GMT"
+          "Value": "Fri, 28 Mar 2025 16:33:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1417,7 +1417,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 04:40:40 GMT"
+          "Value": "Fri, 28 Mar 2025 16:33:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1462,7 +1462,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 04:40:40 GMT"
+          "Value": "Fri, 28 Mar 2025 16:33:05 GMT"
         },
         {
           "Name": "Cache-Control",
