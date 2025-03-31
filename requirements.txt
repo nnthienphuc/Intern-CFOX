@@ -19,10 +19,10 @@ Dựng web API .net 8.0 trở lên (giao diện web làm cơ bản cũng đượ
  ? Database tự thiết kế hay sao? Có bắt buộc phải tối ưu database về chuẩn 3 hay gì không? hay chỉ thiết kế để chạy được project thôi? -> Tự thiết kế
 
 - Yêu cầu bổ sung:
-     + Authentication/Authorization: Kiểm tra token xác thực và hết hạn khi gọi API sản phẩm/danh mục.
-     + Validation: Validate dữ liệu đầu vào 
+     + Authentication/Authorization: Kiểm tra token xác thực và hết hạn khi gọi API sản phẩm/danh mục. (done)
+     + Validation: Validate dữ liệu đầu vào (đã bắt được mấy cái cần thiết)
      + Refresh Token: Hỗ trợ refresh token để không phải đăng nhập lại.
-     + Điều kiện áp dụng Voucher: Giá trị đơn hàng tối thiểu, sản phẩm/danh mục áp dụng.
+     + Điều kiện áp dụng Voucher: Giá trị đơn hàng tối thiểu, sản phẩm/danh mục áp dụng. (chỉ mới đạt giá trị tối thiểu, chưa áp dụng cho sản phẩm hay thể loại cụ thể)
      + Tích hợp RabbitMQ:Xử lý tác vụ bất đồng bộ: Gửi email, xử lý đơn hàng.
      + Caching thông tin sản phẩm
      + Bắt lỗi và logging
