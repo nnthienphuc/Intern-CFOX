@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\controllers\\authcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:controllers\\authcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\controllers\\promotioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:controllers\\promotioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\dtos\\promotionupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\dtos\\promotiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:dtos\\promotiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39A4AF42-526E-4EDE-AFD9-8DAB0FC7B2F9}|BookStoreWebApp.csproj|d:\\github\\intern-cfox\\bookstorewebapp\\dtos\\customerupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 52,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,19 +86,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "AuthController .cs",
+              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\AuthController .cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController .cs",
+              "ToolTip": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\AuthController .cs",
+              "RelativeToolTip": "Controllers\\AuthController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T10:43:57.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T10:42:06.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PromotionController.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\PromotionController.cs",
               "RelativeDocumentMoniker": "Controllers\\PromotionController.cs",
               "ToolTip": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\PromotionController.cs",
               "RelativeToolTip": "Controllers\\PromotionController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGMAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowBkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T01:14:34.767Z"
+              "WhenOpened": "2025-03-29T01:14:34.767Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PromotionUpdateRequest.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\DTOs\\PromotionUpdateRequest.cs",
               "RelativeDocumentMoniker": "DTOs\\PromotionUpdateRequest.cs",
@@ -102,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "PromotionCreateRequest.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\DTOs\\PromotionCreateRequest.cs",
               "RelativeDocumentMoniker": "DTOs\\PromotionCreateRequest.cs",
@@ -114,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "PromotionDTO.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\DTOs\\PromotionDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\PromotionDTO.cs",
@@ -126,31 +161,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Promotion.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Models\\Promotion.cs",
               "RelativeDocumentMoniker": "Models\\Promotion.cs",
               "ToolTip": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Models\\Promotion.cs",
               "RelativeToolTip": "Models\\Promotion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T01:07:49.559Z"
+              "WhenOpened": "2025-03-29T01:07:49.559Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
               "ToolTip": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAcwGsAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T00:52:07.334Z"
+              "WhenOpened": "2025-03-29T00:52:07.334Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "CustomerUpdateRequest.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\DTOs\\CustomerUpdateRequest.cs",
               "RelativeDocumentMoniker": "DTOs\\CustomerUpdateRequest.cs",
@@ -162,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "CustomerCreateRequest.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\DTOs\\CustomerCreateRequest.cs",
               "RelativeDocumentMoniker": "DTOs\\CustomerCreateRequest.cs",
@@ -174,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "CustomerDTO.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\DTOs\\CustomerDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\CustomerDTO.cs",
@@ -186,19 +223,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
               "ToolTip": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAkwHMAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T00:48:54.672Z"
+              "WhenOpened": "2025-03-29T00:48:54.672Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Customer.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Models\\Customer.cs",
@@ -210,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -222,16 +260,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
               "ToolTip": "D:\\Github\\Intern-CFOX\\BookStoreWebApp\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwFQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T16:15:53.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T16:15:53.538Z"
             }
           ]
         }

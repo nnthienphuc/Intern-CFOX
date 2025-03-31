@@ -9,7 +9,7 @@ public partial class Order
 
     public int StaffId { get; set; }
 
-    public short PromotionId { get; set; }
+    public short? PromotionId { get; set; }
 
     public int CustomerId { get; set; }
 

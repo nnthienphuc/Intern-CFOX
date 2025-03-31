@@ -74,7 +74,6 @@ namespace BookStoreWebApp.Controllers
             return Ok(new { message = "Mật khẩu đã được đặt lại thành 123456. Hãy đăng nhập và đổi mật khẩu ngay!" });
         }
 
-
         [HttpPost("change-password")]
         [Authorize] // Yêu cầu user đã đăng nhập
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordRequest request)
