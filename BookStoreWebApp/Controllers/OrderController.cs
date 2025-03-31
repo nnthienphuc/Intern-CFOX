@@ -1,4 +1,5 @@
 ﻿using BookStoreWebApp.Data;
+using BookStoreWebApp.DTOs;
 using BookStoreWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +18,6 @@ public class OrderController : ControllerBase
     [HttpPost("checkout")]
     public async Task<IActionResult> Checkout([FromBody] CheckoutRequest request)
     {
-        // Check khách hàng
         var customer = await _context.Customers.FindAsync(request.CustomerId);
         if (customer == null)
             return BadRequest(new { message = "Không tìm thấy khách hàng!" });
@@ -32,7 +32,6 @@ public class OrderController : ControllerBase
         if (books.Count != request.Items.Count)
             return BadRequest(new { message = "Một số sách không tồn tại!" });  // Check nếu nhập sai ISBN bên postman
 
-        // Tính tổng tiền
         decimal total = 0;
         var orderDetails = new List<OrderDetail>();
 
@@ -44,7 +43,6 @@ public class OrderController : ControllerBase
             if (book.Quantity < item.Quantity)
                 return BadRequest(new { message = $"Sách {book.Title} không đủ số lượng!" });
 
-            // Trừ tồn kho
             book.Quantity -= item.Quantity;
 
             total += book.Price * item.Quantity;
@@ -74,13 +72,11 @@ public class OrderController : ControllerBase
             }
         }
 
-        // Kiểm tra tiền khách đưa
         if (request.AmountPaid < total)
             return BadRequest(new { message = "Tiền khách đưa không đủ!" });
 
         var change = request.AmountPaid - total;
 
-        // Tạo đơn hàng
         var order = new Order
         {
             CustomerId = request.CustomerId,
@@ -101,5 +97,31 @@ public class OrderController : ControllerBase
             total,
             change = change
         });
+    }
+
+    [HttpPatch("update-order")]
+    public async Task<IActionResult> UpdateOrderStatus([FromBody] UpdateOrderStatusRequest request)
+    {
+        var order = await _context.Orders.FindAsync(request.OrderId);
+
+        if (order == null)
+            return NotFound(new { message = "Không tìm thấy đơn hàng!" });
+
+        // Nếu trạng thái không đổi thì không cần cập nhật
+        if (order.Status == request.Status)
+            return BadRequest(new { message = "Trạng thái đơn hàng không thay đổi!" });
+
+        order.Status = request.Status;
+
+        if (!string.IsNullOrWhiteSpace(request.Note))
+        {
+            order.Note = string.IsNullOrWhiteSpace(order.Note)
+                ? request.Note
+                : $"{order.Note}\n➡ {request.Note}";
+        }
+
+        await _context.SaveChangesAsync();
+
+        return Ok(new { message = $"Đã cập nhật trạng thái đơn hàng thành. Status code: {request.Status}." });
     }
 }
