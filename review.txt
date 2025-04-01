@@ -1,0 +1,16 @@
+database:
+- tất cả table nên đặt tên chung cho 2 field là id và is_delete (soft delete thay vì hard delete)
+- thiết kế lại database (đặt tên không cần tên table trước ví dụ staff_id thay thành id)
+- bên promotion nên thêm giờ cho startdate và enddate 
+- bên order thêm 2 field là giá tiền ban đầu và giá tiền đã giảm
+- đổi tên order_detail thành order_item
+- cái gì thêm được thì nên thêm vào table để khỏi phải chạy query tìm kiếm
+- 
+
+code:
+- Thêm Iservice và service
+- Đặt base controller gán authorize rồi cho các controller khác kế thừa nó (ngoại trừ auth thì cho nó anonymous) -> tránh code nhiều hoặc bị miss authorize
+- Tương tự áp dụng cho các model là tạo base model gồm 2 field chính (id và is_delete) xong cho các model khác kế thừa nó
+- bắt is_delete ở bên code trước thay vì phải query 'where is_delete = 1'
+- update lại delete bên repo là 'update is_delete = 1' luôn chứ không để xóa cứng
+- Khi checkout thì check lại database 1 lần nữa để tránh việc database bị sửa trong lúc tạo order
